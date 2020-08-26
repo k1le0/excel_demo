@@ -18,10 +18,10 @@ public class ExportController {
         data.setUsername("wang");
         data.setPassword("150361");
         lists.add(data);
-        UserData data1 = new UserData();
-        data1.setUsername("xiao");
-        data1.setPassword("111111");
-        lists.add(data1);
+        UserData data2 = new UserData();
+        data2.setUsername("xiao");
+        data2.setPassword("111111");
+        lists.add(data2);
         EasyExcel.write(fileName, UserData.class).sheet("模板").doWrite(lists);
     }
 }
