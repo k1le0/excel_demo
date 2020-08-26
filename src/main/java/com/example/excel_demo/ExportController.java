@@ -24,4 +24,9 @@ public class ExportController {
         lists.add(data2);
         EasyExcel.write(fileName, UserData.class).sheet("模板").doWrite(lists);
     }
+
+    @GetMapping("/demo")
+    public String demo(){
+        return "hello demo";
+    }
 }
